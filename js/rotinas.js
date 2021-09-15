@@ -65,13 +65,13 @@ function executarRotinas() {
         usuarios.forEach(function (x, i) {
             var tr = document.createElement("tr"),
                 tdName = document.createElement("td"),
-                tdJob = document.createElement("td"),
+                tdEmail = document.createElement("td"),
                 tdAge = document.createElement("td"),
                 tdRemove = document.createElement("td"),
                 btnRemove = document.createElement("button");
 
             tdName.innerHTML = x.nome;
-            tdJob.innerHTML = x.email;
+            tdEmail.innerHTML = x.email;
             tdAge.innerHTML = x.idade;
 
             // Remove o conteúdo gravado no html e chama a função que irá remover do localStorage
@@ -84,7 +84,7 @@ function executarRotinas() {
             tdRemove.appendChild(btnRemove);
 
             tr.appendChild(tdName);
-            tr.appendChild(tdJob);
+            tr.appendChild(tdEmail);
             tr.appendChild(tdAge);
             tr.appendChild(tdRemove);
 
